@@ -1,0 +1,25 @@
+Redupe ext4 partitions (Dynamic partitions only)
+===========
+
+lptools fron Phhusson (Twrp has the static version of it included on dynamic phones)
+
+https://gerrit.twrp.me/c/android_bootable_recovery/+/4735
+
+https://github.com/phhusson/vendor_lptools/commit/63b3d966423a030e7072f6e0fba3c06d840ac8c0
+
+Commands from Phhusson [tweet](https://twitter.com/phhusson/status/1272814791095128064):
+
+```
+lptools resize system $((2*1024*1024*1024))
+lptools unmap system
+lptools map system
+e2fsck -f /dev/block/dm-x
+resize2fs /dev/block/dm-x 2G
+e2fsck -E unshare_blocks /dev/block/dm-x
+```
+
+Instead of lptools you can resize the logical partition in fastbootd as well.
+
+```
+fastboot resize-logical-partition system $((2*1024*1024*1024))
+```
