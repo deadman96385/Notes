@@ -1,4 +1,4 @@
-You will need to install the Home assistant Minimal version because the normal version has dependecies on Google play services for firebase notifications for non-local notifications. You also will need to replace the webview with one from normal android using this [guide](../master/Android-Things/replace-webview.md)
+You will need to install the Home assistant Minimal version because the normal version has dependecies on Google play services for firebase notifications for non-local notifications. You also will need to replace the webview with one from normal android using this [guide](../Android-Things/replace-webview.md)
 
 Download the minimal version of apk from the Github release page for the android companion app [here](https://github.com/home-assistant/android/releases)
 
