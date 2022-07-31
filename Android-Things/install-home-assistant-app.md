@@ -13,3 +13,7 @@ Optionally you can allow the Home Assistant app to run in the background (I am n
 You can now launch the app via a launcher or this adb command
 
 ```adb shell am start -n io.homeassistant.companion.android.minimal/io.homeassistant.companion.android.launch.LaunchActivity```
+
+To enter text for the login field either install a keyboard app or you can run the following adb command:
+
+```adb shell input text TEXT_GOES_HERE```
