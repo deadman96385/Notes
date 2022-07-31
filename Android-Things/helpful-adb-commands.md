@@ -33,3 +33,6 @@ Install apk via adb with all permissions in the manifest granted
 Install apk via adb, reinstall app while keeping data
 
 ```adb install -r APK_FILE```
+
+Allow an app to disable battery optimizations and run in the background
+```adb shell dumpsys deviceidle whitelist +io.homeassistant.companion.android.minimal```
