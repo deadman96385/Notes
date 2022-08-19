@@ -25,8 +25,6 @@ Up to four hours of integrated battery life for the tablet
 
 3.5-mm audio jack (with L/R output and mic input), speaker and microphone
 
-
-
 # Accessories:
 Hub with four USB device ports and two RJ12 cash drawer ports
 
@@ -37,3 +35,13 @@ Support for existing USB peripherals, including Clover Mini and FD40 PIN Debit P
 Standard thermal receipt printer
 
 Thermal receipt printer with 4.3" customer-facing display and NFC reader
+
+# Test setup with a wire coming out of the back (Investigate)
+![test](files/fcc-test-setup.png)
+
+# FCC teardown pictures
+![1](files/fcc-internal1.png)
+![2](files/fcc-internal2.png)
+![3](files/fcc-internal3.png)
+![4](files/fcc-internal4.png)
+
