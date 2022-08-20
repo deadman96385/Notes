@@ -35,4 +35,9 @@ Install apk via adb, reinstall app while keeping data
 ```adb install -r APK_FILE```
 
 Allow an app to disable battery optimizations and run in the background
+
 ```adb shell dumpsys deviceidle whitelist +io.homeassistant.companion.android.minimal```
+
+Launches Magisk
+
+```adb shell monkey -p com.topjohnwu.magisk -c android.intent.category.LAUNCHER 1```
