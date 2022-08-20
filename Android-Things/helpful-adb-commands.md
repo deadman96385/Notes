@@ -26,6 +26,10 @@ Launches camera app
 
 ```adb shell am start -n com.android.camera2/com.android.camera.CameraActivity```
 
+Force stop an app
+
+```adb shell am force-stop PACKAGE_NAME```
+
 Install apk via adb with all permissions in the manifest granted
 
 ```adb install -g APK_FILE```
@@ -37,6 +41,28 @@ Install apk via adb, reinstall app while keeping data
 Allow an app to disable battery optimizations and run in the background
 
 ```adb shell dumpsys deviceidle whitelist +io.homeassistant.companion.android.minimal```
+
+Allows draw over other apps without settings
+
+```adb shell pm grant com.fb.fluid android.permission.SYSTEM_ALERT_WINDOW```
+
+Enable accessibility options for an app's service
+
+```adb shell settings put secure enabled_accessibility_services com.fb.fluid/.MainAccessibilityService```
+
+Check currently enabled accessibilites
+
+```adb shell settings get secure enabled_accessibility_services```
+
+Grant accessibility settings for an app you don't know the service name of
+
+https://forum.xda-developers.com/t/app-firetv-accessibility-permissions-manager-for-firetv-devices.4144057/
+
+or
+
+Look through this commands output for the activity
+
+```adb shell pm dump PACKAGE_NAME```
 
 Launches Magisk
 
