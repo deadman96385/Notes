@@ -14,6 +14,18 @@ Will launch the android things settings page
 
 ```adb shell monkey -p com.android.iotlauncher -c android.intent.category.HOME 1```
 
+Will launch aosp launcher
+
+```adb shell monkey -p com.android.launcher3 -c android.intent.category.HOME 1```
+
+Will launch aosp settings
+
+```adb shell monkey -p com.android.settings -c android.intent.category.LAUNCHER 1```
+
+Get all logs to this point and then stop
+
+```adb logcat -b all -d```
+
 This will launch the google setupwizard/launcher
 
 ```adb shell monkey -p com.google.assistant.core -c android.intent.category.LAUNCHER 1```
